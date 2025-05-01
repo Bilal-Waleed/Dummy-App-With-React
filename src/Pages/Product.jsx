@@ -30,7 +30,7 @@ const Product = () => {
       {isLoading && <div className="p-10 text-center">Loading...</div>}
       {isError && <div className="p-10 text-center">{error.message}</div>}
 
-      {!isLoading && !isError && data && (
+      {data && (
         <div className={`flex justify-center items-center min-h-screen p-10 transition-all ${Theme ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}`}>
           <Card className={`w-full md:w-[450px] lg:w-[500px] shadow-md hover:shadow-lg transition-all duration-300 rounded-lg 
             ${Theme ? 'bg-gray-700 text-white' : 'bg-white text-black'}`}>
